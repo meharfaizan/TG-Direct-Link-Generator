@@ -16,8 +16,8 @@ class Var(object):
     BIN_CHANNEL = int(
         environ.get("BIN_CHANNEL","-1001843564893")
     )  # you NEED to use a CHANNEL when you're using MULTI_CLIENT
-    PORT = int(environ.get("PORT", 8080))
-    BIND_ADDRESS = str(environ.get("WEB_SERVER_BIND_ADDRESS", "0.0.0.0"))
+    PORT = int(environ.get("PORT", 8000))
+    BIND_ADDRESS = str(environ.get("WEB_SERVER_BIND_ADDRESS", "8.0.8.0"))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     HAS_SSL = environ.get("HAS_SSL", False)
     HAS_SSL = True if str(HAS_SSL).lower() == "true" else False
